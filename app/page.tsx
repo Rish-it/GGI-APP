@@ -3,8 +3,8 @@ import { Card } from "@/components/ui/card";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { Ripple } from "@/components/ui/ripple";
 import { DarkModeToggle } from "@/components/dark_toggle";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import Image from "next/image";
+import { FaGithub, FaTwitter } from "react-icons/fa";
+
 
 export default function Page() {
   return (
