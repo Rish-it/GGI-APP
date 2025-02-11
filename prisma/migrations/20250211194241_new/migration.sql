@@ -6,3 +6,6 @@ CREATE TABLE "Item" (
 
     CONSTRAINT "Item_pkey" PRIMARY KEY ("id")
 );
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Item_name_key" ON "Item"("name");
