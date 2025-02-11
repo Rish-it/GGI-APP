@@ -10,12 +10,14 @@ export function DarkModeToggle() {
   // Load theme preference from localStorage on page load
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
-      setIsDarkMode(true);
+    if (storedTheme) {
+      setIsDarkMode(storedTheme === "dark");
+    } else {
+      setIsDarkMode(true); 
     }
   }, []);
+  
 
-  // Handle theme toggle
   const toggleTheme = () => {
     setIsDarkMode((prevMode) => {
       const newMode = !prevMode;
@@ -25,7 +27,7 @@ export function DarkModeToggle() {
     });
   };
 
-  // Apply dark mode to the root
+
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark");

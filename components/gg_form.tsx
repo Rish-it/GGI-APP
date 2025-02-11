@@ -35,7 +35,7 @@ export function ProfileForm() {
 
   async function onSubmit(values: { name: string }) {
     setLoading(true);
-    setSuccess(false);
+    setSuccess(false); 
 
     try {
       const response = await fetch("/api/backend", {
@@ -52,8 +52,9 @@ export function ProfileForm() {
       form.reset();
       setSuccess(true);
 
+    
       setTimeout(() => setSuccess(false), 3000);
-    } catch {
+    } catch (error) {
       toast({
         title: "Error",
         description: "Failed to add item",
