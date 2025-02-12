@@ -66,8 +66,7 @@ The project is designed with scalability in mind. Below are some areas for futur
 - Use **JWT-based authentication** for secure API access.
 
 ### 2. **Database Integration**
-- Store submitted names in a **PostgreSQL database** using Prisma.
-- Add a **MongoDB option** for NoSQL storage flexibility.
+- Store submitted names in a **PostgreSQL database** using Prisma.  (completed)
 - Implement **Redis caching** for fast access to frequently used data.
 
 ### 3. **Role-Based Access Control (RBAC)**
@@ -75,17 +74,16 @@ The project is designed with scalability in mind. Below are some areas for futur
 - Restrict access to certain API routes.
 
 ### 4. **UI & UX Enhancements**
-- Improve form layout using **Acertinity UI**.
-- Add a **dark mode toggle**.
-- Use **Framer Motion** for animations.
+- Add a **dark mode toggle**.    (completed)
+- Use **Framer Motion** for animations.(completed)
 
 ### 5. **Enhanced API & Error Handling**
-- Implement better error logging with **Sentry**.
-- Improve response handling with **Zod-safe API parsing**.
+- Implement better error logging with **Sentry**.  (completed)
+- Improve response handling with **Zod-safe API parsing**.(completed)
 - Add **Rate Limiting** to prevent spam submissions.
 
 ### 6. **Deployment & CI/CD**
-- Deploy the app on **Vercel** for production.
+- Deploy the app on **Vercel** for production. (completed)
 - Set up **GitHub Actions** for automated testing & deployment.
 - Monitor performance using **Lighthouse & Vercel Analytics**.
 
